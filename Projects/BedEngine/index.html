@@ -1,0 +1,27 @@
+<html>
+    <body>
+        <section> 
+            <h1> Bed Engine </h1>
+            <p> 
+                Bed Engine is my custom build game engine focusing on the reusability of ECS. 
+            </p>
+            <code>
+                uint64_t world1 = m_ecs.CreateWorld();
+
+                uint64_t w1Player = m_ecs.CreateEntity(world1);
+                m_ecs.AttachComponents(world1, w1Player, Bed::Transform(Bed::Vector3(0.0f, 0.0f, 5.0f), Bed::Vector3(0.0f), Bed::Vector3(1.0f)),
+                                        Bed::StaticMesh("Assets/Resources/Meshes/Cube.obj"),
+                                        Bed::Texture("Assets/Resources/Textures/TestBedEngineIcon.png"),
+                                        Bed::Input(),
+                                        Bed::PlayerTag(),
+                                        Bed::AABBCollision(-1.0f, 1.0f));
+                
+                m_ecs.AddSystem(world1, Bed::InputSystem);
+                m_ecs.AddSystem(world1, Bed::StaticMeshSystem);
+                m_ecs.AddSystem(world1, Bed::TextureSystem);
+                m_ecs.AddSystem(world1, Bed::PlayerControllerSystem);
+                m_ecs.AddSystem(world1, Bed::AABBCollisionSystem);
+            </code>
+        </section>
+    </body>
+</html>
