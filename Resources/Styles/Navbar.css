@@ -19,10 +19,10 @@
 }
 
 .Navbar a:hover {
-    background-color: #333; /* grey background on hover */
-    text-decoration: underline; /* underline on hover */
+    background-color: #333; /* background on hover */
+    text-decoration: underline; /* underline */
 }
 
 .Navbar a.active {
-    background-color: #555; /* even darker grey if you want to show active page */
+    background-color: #555; /* background on active */
 }
