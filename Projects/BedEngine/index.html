@@ -1,30 +1,107 @@
-<html>
-    <body>
-        <div id="navbar-container"></div>
-        <script src="/Resources/java/navbarloader.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/Resources/Styles/Dark/DarkMode.css"/>
+  <link rel="stylesheet" href="/Resources/Styles/Tagline.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bed Engine | Jake Hickman</title>
+  <style>
+    a {
+      color: #0077b5;
+      text-decoration: none;
+    }
 
-        <section> 
-            <h1> Bed Engine </h1>
-            <p> 
-                Bed Engine is my custom build game engine focusing on the reusability of ECS. 
-            </p>
-            <code>
-                uint64_t world1 = m_ecs.CreateWorld();
+    .back-link {
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
 
-                uint64_t w1Player = m_ecs.CreateEntity(world1);
-                m_ecs.AttachComponents(world1, w1Player, Bed::Transform(Bed::Vector3(0.0f, 0.0f, 5.0f), Bed::Vector3(0.0f), Bed::Vector3(1.0f)),
-                                        Bed::StaticMesh("Assets/Resources/Meshes/Cube.obj"),
-                                        Bed::Texture("Assets/Resources/Textures/TestBedEngineIcon.png"),
-                                        Bed::Input(),
-                                        Bed::PlayerTag(),
-                                        Bed::AABBCollision(-1.0f, 1.0f));
-                
-                m_ecs.AddSystem(world1, Bed::InputSystem);
-                m_ecs.AddSystem(world1, Bed::StaticMeshSystem);
-                m_ecs.AddSystem(world1, Bed::TextureSystem);
-                m_ecs.AddSystem(world1, Bed::PlayerControllerSystem);
-                m_ecs.AddSystem(world1, Bed::AABBCollisionSystem);
-            </code>
-        </section>
-    </body>
+    .project-title {
+      font-size: 2rem;
+      margin-bottom: 0.2rem;
+    }
+
+    .screenshot {
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-bottom: 1.5rem;
+    }
+
+    .section {
+      margin-bottom: 2rem;
+    }
+
+    .link-buttons a {
+      display: inline-block;
+      background: #0077b5;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      margin-right: 1rem;
+      margin-top: 0.5rem;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        margin: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body class="Background">
+
+  <div id="navbar-container"></div>
+  <script src="/Resources/java/navbarloader.js"></script>
+
+  <h1 class="project-title CentreText">Bed Engine</h1>
+  <p class="tagline CentreText">A modular C++ game engine built from scratch</p>
+
+  <img class="CentreText" src="/Resources/Images/WildMagicImage.png" alt="Wild Magic Logo" class="screenshot">
+
+  <div class="section">
+    <h2 class="CentreText">Description</h2>
+    <p class="CentreText">
+      BedEngine is a custom-built game engine designed for flexibility and modularity. It features a lightweight ECS, OpenGL-based renderer, and support for scripting, serialization, and plugins.
+    </p>
+    <p class="CentreText">
+        The engine is built entirely in C++ with a strong emphasis on performance and clean architecture.
+    </p>
+    <p class="CentreText">
+      The goal of BedEngine was to learn low-level engine architecture, graphics programming, and build an extendable foundation for future projects.
+    </p>
+  </div>
+
+  <div class="section CentreText">
+    <h2>Technologies Used</h2>
+    <div class="tech-tags">
+        <span>C++</span>
+        <span>OpenGL</span>
+        <span>ECS</span>
+        <span>GLSL</span>
+        <span>Custom Math Lib</span>
+    </div>
+  </div>
+
+  <div class="section CentreText">
+    <h2>Features</h2>
+    <ul>
+      <li>Custom Entity Component System (ECS)</li>
+      <li>Basic 2D/3D renderer with shader abstraction</li>
+      <li>Modular systems architecture</li>
+    </ul>
+  </div>
+
+  <div class="section CentreText">
+    <h2>Links</h2>
+    <div class="link-buttons">
+      <a href="https://github.com/jakemarkhickman/BedEngine" target="_blank">GitHub Repo</a>
+      <a href="https://youtu.be/your-video-link" target="_blank">Video Demo</a>
+    </div>
+  </div>
+
+</body>
 </html>

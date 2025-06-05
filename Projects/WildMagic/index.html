@@ -1,17 +1,103 @@
-<html>
-    <body>
-        <div id="navbar-container"></div>
-        <script src="/Resources/java/navbarloader.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/Resources/Styles/Dark/DarkMode.css"/>
+  <link rel="stylesheet" href="/Resources/Styles/Tagline.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wild Magic | Jake Hickman</title>
+  <style>
+    a {
+      color: #0077b5;
+      text-decoration: none;
+    }
 
-        <section> 
-            <h1> Wild Magic </h1>
-            <p> 
-                <a href="https://neatlypackaged.itch.io/wildmagic"> Game </a>Wild Magic is my second year collab project at Staffordshire University. 
-                For this project I was a junior C++ Unreal Engine Programmer. I set up the framework of the project and also done a large portion of bug fixing.
-            </p>
-        </section>
-        <section>
-            <img src="Images/LevelingSystem.jpg" alt="The planning for the leveling system">
-        </section>
-    </body>
+    .back-link {
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+
+    .project-title {
+      font-size: 2rem;
+      margin-bottom: 0.2rem;
+    }
+
+    .screenshot {
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-bottom: 1.5rem;
+    }
+
+    .section {
+      margin-bottom: 2rem;
+    }
+
+    .link-buttons a {
+      display: inline-block;
+      background: #0077b5;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      margin-right: 1rem;
+      margin-top: 0.5rem;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        margin: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body class="Background">
+
+  <div id="navbar-container"></div>
+  <script src="/Resources/java/navbarloader.js"></script>
+
+  <h1 class="project-title CentreText">Wild Magic</h1>
+  <p class="tagline CentreText">Team 29 and part of a Collaborative Game Development module at Staffordshire University.</p>
+
+  <img class="CentreText" src="/Resources/Images/WildMagicImage.png" alt="Wild Magic Logo" class="screenshot">
+
+  <div class="section">
+    <h2 class="CentreText">Description</h2>
+    <p class="CentreText">
+      You are a lone travelling wizard, traversing across a vast world of what was once a vibrant and lost civilization.  However, it is inhabited by monstrous and hostile slimes who halt your path.
+    </p>
+    <p class="CentreText">
+      What should you do? Take supplies, destroy the slimes or better yet... survive!
+    </p>
+  </div>
+
+  <div class="section CentreText">
+    <h2>Technologies Used</h2>
+    <div class="tech-tags">
+        <span>Unreal Engine 5</span>
+        <span>C++</span>
+        <span>Blueprints</span>
+    </div>
+  </div>
+
+  <div class="section CentreText">
+    <h2>Role</h2>
+    <div class="tech-tags">
+        <span>Tech</span>
+        <span>Junior</span>
+        <span>Designer</span>
+    </div>
+  </div>
+
+  <div class="section CentreText">
+    <h2>Links</h2>
+    <div class="link-buttons">
+      <a href="https://github.com/hylin0/Wild-Magic" target="_blank">GitHub Repo</a>
+      <a href="https://www.youtube.com/watch?v=3ecswsotA1Q&t=1s" target="_blank">Game Trailer (Not my channel)</a>
+      <a href="https://neatlypackaged.itch.io/wildmagic" target="_blank">Play the game on Itch</a>
+    </div>
+  </div>
+
+</body>
 </html>
