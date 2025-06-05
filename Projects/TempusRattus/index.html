@@ -2,17 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="/Resources/Styles/Dark/DarkMode.css"/>
+  <link rel="stylesheet" href="/Resources/Styles/Tagline.css"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tempus Rattus | Jake Hickman</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 2rem;
-      line-height: 1.6;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-
     a {
       color: #0077b5;
       text-decoration: none;
@@ -28,12 +22,6 @@
       margin-bottom: 0.2rem;
     }
 
-    .tagline {
-      font-size: 1.2rem;
-      color: #555;
-      margin-bottom: 1.5rem;
-    }
-
     .screenshot {
       max-width: 100%;
       height: auto;
@@ -44,15 +32,6 @@
 
     .section {
       margin-bottom: 2rem;
-    }
-
-    .tech-tags span {
-      background: #0077b5;
-      color: white;
-      padding: 0.3rem 0.6rem;
-      margin-right: 0.5rem;
-      border-radius: 4px;
-      font-size: 0.9rem;
     }
 
     .link-buttons a {
@@ -73,24 +52,27 @@
   </style>
 </head>
 
-<body>
+<body class="Background">
 
   <div id="navbar-container"></div>
   <script src="/Resources/java/navbarloader.js"></script>
 
-  <h1 class="project-title">Tempus Rattus</h1>
-  <p class="tagline">Rattus vita. Rattus sickus. Rattus mortis.</p>
+  <h1 class="project-title CentreText">Tempus Rattus</h1>
+  <p class="tagline CentreText">Rattus vita. Rattus sickus. Rattus mortis.</p>
 
-  <img src="/Resources/Images/TempusRattus.png" alt="Screenshot of Tempus Rattus" class="screenshot">
+  <img class="CentreText" src="/Resources/Images/TempusRattus.png" alt="Screenshot of Tempus Rattus" class="screenshot">
 
   <div class="section">
-    <h2>Description</h2>
-    <p>
-      Tempus Rattus is a game set in 1369 England, where you play as a plague infested rat on a mission to spread the black death to unsuspecting townsfolk. Unfortunately for you, the local plague doctor has other plans. I'd move quickly if I was you. 
+    <h2 class="CentreText">Description</h2>
+    <p class="CentreText">
+      Tempus Rattus is a game set in 1369 England, where you play as a plague infested rat on a mission to spread the black death to unsuspecting townsfolk. 
+    </p>
+    <p class="CentreText">
+      Unfortunately for you, the local plague doctor has other plans. I'd move quickly if I was you.
     </p>
   </div>
 
-  <div class="section">
+  <div class="section CentreText">
     <h2>Technologies Used</h2>
     <div class="tech-tags">
       <span>C++</span>
@@ -99,7 +81,7 @@
     </div>
   </div>
 
-  <div class="section">
+  <div class="section CentreText">
     <h2>Role</h2>
     <div class="tech-tags">
       <span>Tech</span>
@@ -107,7 +89,7 @@
     </div>
   </div>
 
-  <div class="section">
+  <div class="section CentreText">
     <h2>Links</h2>
     <div class="link-buttons">
       <a href="https://github.com/JakeMarkHickman/Group20Collab" target="_blank">GitHub Repo</a>

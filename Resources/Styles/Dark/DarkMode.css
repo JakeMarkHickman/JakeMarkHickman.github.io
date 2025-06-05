@@ -12,5 +12,22 @@
     color: white;
     width: 100%;
     margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
 }
 
+.tech-tags span 
+{
+    background: #0077b5;
+    color: white;
+    padding: 0.3rem 0.6rem;
+    margin-right: 0.5rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.CentreText
+{
+    color: white;
+    text-align: center;
+}
